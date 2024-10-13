@@ -1094,7 +1094,7 @@ const Thisproject = (() => {
       .makeSettingCommand()
       .makeDecisionButton()
       .reflectMode()
-      .makeSaveButton()
+      //.makeSaveButton()
       .makeCursor()
       .fetchPokeData()
       .getPokeId()
