@@ -1,0 +1,179 @@
+h1 {
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+    background-color: #fff;
+    margin: 24px;
+    padding: 5px 8px;
+    border: 25px groove;
+    border-top: 40px solid;
+    border-bottom: 40px solid;
+    border-image: linear-gradient(to right, #fbfd5c 0%, #acff40 10%, #77ff5c 20%, #57ffbe 30%, #45f1be 40%, #15ccfa 50%, #3e8bff 60%, #ea62f7 70%, #fd4ca5 80%,  #f76262 90%, #ff5656 100%);
+    border-image-slice: 1;
+}
+
+button.a, button.b, button.c, button.d {
+    font-size: 30px;
+    float: right;
+    text-align: center;
+    list-style: none;
+    padding: 20px 20px;
+    margin: 10px;
+    border: 8px solid #000;
+    background-color: #fff;
+    width: 30%;
+}
+
+button.a, button.c {
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+
+button.b, button.d {
+    position: absolute;
+    top: 500px;
+    left: 80px;
+}
+
+button.c {
+    right: 80px;
+    left: auto;
+}
+
+button.d {
+    right: 80px;
+    left: auto;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.setting-command {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toggle_button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 170px;
+    height: 42px;
+}
+
+.toggle_input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.toggle_label {
+    width: 170px;
+    height: 42px;
+    background: #fff;
+    border: 3px solid #eee;
+    position: relative;
+    display: inline-block;
+    border-radius: 40px;
+    transition: 0.4s;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 42px;
+}
+
+.toggle_label:after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    left: 2px;
+    top: 2px;
+    z-index: 2;
+    background: #eee;
+    transition: 0.4s;
+}
+
+body:not(.dark-mode) .toggle_label {
+    background-color: #fff;
+    border: 3px solid #000;
+}
+
+body.dark-mode .toggle_label {
+    background-color: #000;
+    border: 3px solid #fff;
+}
+
+body.dark-mode #button1,
+body.dark-mode #button2,
+body.dark-mode #button3,
+body.dark-mode #button4{
+    border: 8px solid #fff;
+    background-color: #000;
+    color: #fff;
+}
+
+body:not(.dark-mode) #languageButton:checked + .toggle_label,
+body:not(.dark-mode) #imageButton:checked + .toggle_label {
+    border: 3px solid #000;
+}
+
+.toggle_input:checked + .toggle_label:after {
+    left: calc(100% - 34px);
+}
+
+.decision-command {
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+}
+  
+
+.decision-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+#buttonWithImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#decisionButton {
+    display: block;
+    text-align: center;
+}
+
+#decisionButton img {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+}
+
+.toggle_label.shiny {
+    border-image: linear-gradient(to right, #fbfd5c 0%, #acff40 10%, #77ff5c 20%, #57ffbe 30%, #45f1be 40%, #15ccfa 50%, #3e8bff 60%, #ea62f7 70%, #fd4ca5 80%,  #f76262 90%, #ff5656 100%);
+    border-image-slice: 1;
+}
+
+.center-image {
+    margin: 0 auto;
+}

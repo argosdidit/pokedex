@@ -1,0 +1,541 @@
+@charset "utf-8";
+
+
+h1 {
+  color: #000;
+  font-size: 50px;
+  text-align: center;
+  background-color: #fff;
+  margin: 24px;
+  padding: 5px 8px;
+  border: 25px groove;
+  border-top: 40px solid;
+  border-bottom: 40px solid;
+  border-image: linear-gradient(to right, #fbfd5c 0%, #acff40 10%, #77ff5c 20%, #57ffbe 30%, #45f1be 40%, #15ccfa 50%, #3e8bff 60%, #ea62f7 70%, #fd4ca5 80%,  #f76262 90%, #ff5656 100%);
+  border-image-slice: 1;
+}
+
+ul.top {
+  float: left;
+  text-align: center;
+}
+input.img{
+  font-size: 20px;
+  background-color: #fff;
+  border: double rgb(0, 0, 0);
+  margin: 35px;
+}
+
+li.a {
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    list-style: none;
+    padding: 20px 20px;
+    margin: 10px;
+    border: 8px solid #000;
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    width: 5%;
+  }
+  
+  li.b {
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    list-style: none;
+    padding: 20px 20px;
+    margin: 10px;
+    border: 8px solid #000;
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    width: 5%;
+  }
+  
+  li.c {
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    list-style: none;
+    padding: 20px 20px;
+    margin: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    right: 60px;
+    width: 5%;
+  }
+
+
+.gender{
+  width: 150px;
+}
+.egg_group{
+  width: 150px;
+}
+.region{
+  width: 150px;
+}
+.generation{
+  width: 150px;
+}
+
+.type_field {
+  top: 450px;
+  left: 50px;
+  width: 450px;
+  height: 140px;
+  border: 2px solid black; /* 全体を囲むボーダー */
+  padding: 20px 10px; /* 内側の余白 */
+  display: inline-block;
+  text-align: center;
+  position: absolute; /* タイトルを絶対配置するために必要 */
+}
+
+.ability_field {
+  top: 680px;
+  left: 50px;
+  width: 450px;
+  height: 270px;
+  border: 2px solid black; /* 全体を囲むボーダー */
+  padding: 20px 10px; /* 内側の余白 */
+  display: inline-block;
+  text-align: center;
+  position: absolute; /* タイトルを絶対配置するために必要 */
+}
+
+.select-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-box {
+  margin: 0 20px;
+  width: 200px; /* リストボックスの幅を固定 */
+}
+
+.list-box select {
+  width: 100%;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  height: 180px; /* 高さを固定 */
+}
+
+.option-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.number {
+  width: 50px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.alphabet {
+  width: 130px;
+  text-align: left;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.poke-lists{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.button-container button {
+  margin: 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.gender_field {
+  top: 1060px;
+  left:50px;
+  border: 2px solid black; /* 全体を囲むボーダー */
+  padding: 20px 10px; /* 内側の余白 */
+  display: inline-block;
+  text-align: center;
+  position: absolute; /* タイトルを相対配置するために必要 */
+}
+
+.egg_group_field {
+  top: 450px;
+  left: 600px;
+  height: 140px;
+  border: 2px solid black; /* 全体を囲むボーダー */
+  padding: 20px 10px; /* 内側の余白 */
+  display: inline-block;
+  text-align: center;
+  position: absolute; /* タイトルを相対配置するために必要 */
+}
+
+.region_field {
+  top: 680px;
+  left: 600px;
+  left: 600px;
+  border: 2px solid black; /* 全体を囲むボーダー */
+  padding: 20px 10px; /* 内側の余白 */
+  display: inline-block;
+  text-align: center;
+  position: absolute; /* タイトルを相対配置するために必要 */
+}
+
+.generation_field {
+  top: 850px;
+  left: 600px;
+  border: 2px solid black; /* 全体を囲むボーダー */
+  padding: 20px 10px; /* 内側の余白 */
+  display: inline-block;
+  text-align: center;
+  position: absolute; /* タイトルを相対配置するために必要 */
+}
+
+.status_field {
+  top: 1250px;
+  left: 50px;
+  width: 450px;
+  border: 2px solid black; /* 全体を囲むボーダー */
+  padding: 20px 10px; /* 内側の余白 */
+  display: inline-block;
+  text-align: center;
+  position: absolute; /* タイトルを相対配置するために必要 */
+}
+
+.status_container {
+  width: 600px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.range-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing between groups */
+}
+
+.label {
+  margin-right: 10px; /* Spacing between label and minValue */
+  font-weight: bold;
+}
+
+.textbox {
+  width: 100px;
+  margin: 0 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.line {
+  flex: 1;
+  height: 5px;
+  background: #ddd;
+  position: relative;
+  margin: 0 20px;
+}
+
+.pointer {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  top: -7.5px;
+}
+
+.hpMinValue,
+.attackMinValue,
+.defenseMinValue,
+.specialAttackMinValue,
+.specialDefenseMinValue,
+.speedMinValue{
+  position: relative;
+  
+  
+}
+
+.hpLine,
+.attackLine,
+.defenseLine,
+.specialLine,
+.specialLine,
+.speedLine{
+  position: relative;
+  
+}
+
+.hpMaxValue,
+.attackMaxValue,
+.defenseMaxValue,
+.specialAttackMaxValue,
+.specialDefenseMaxValue,
+.speedMaxValue{
+  position: relative;
+  
+}
+
+.elements_field {
+  top: 1300px;
+  left: 600px;
+  width: 750px;
+  border: 2px solid black; /* 全体を囲むボーダー */
+  padding: 20px 10px; /* 内側の余白 */
+  display: inline-block;
+  text-align: center;
+  position: absolute; /* タイトルを相対配置するために必要 */
+}
+
+.element_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.list-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #000;
+  width: 600px;
+  min-height: 50px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.list-item {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  width: fit-content;
+}
+.list-item.included {
+  background-color: #add8e6;
+}
+
+.dark-mode .list-item.included {
+  background-color: #add8e6;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.buttons button {
+  margin: 0 10px;
+}
+.divider {
+  width: 100%;
+  border-top: 2px solid #000;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+.search_button{
+  top: 1350px;
+  display: center;
+  padding: 20px 10px; /* 内側の余白 */
+  text-align: center;
+  position: relative; /* タイトルを相対配置するために必要 */
+}
+
+p.serach_button{
+  font-size: 20px;
+}
+
+.title {
+  font-weight: bold;
+  padding: 5px 20px; /* タイトルの周りに余白を追加 */
+  background-color: #f0f0f0; /* タイトルの背景色 */
+  border: 2px solid black; /* タイトルの周りにボーダー */
+  position: absolute;
+  top: -15px; /* タイトルを全体の枠線の上に配置 */
+  left: 50%;
+  transform: translateX(-50%); /* タイトルを中央揃え */
+  background-color: white; /* 背景色で被らないように */
+  z-index: 1; /* タイトルを前面に表示 */
+}
+
+p {
+  margin: 5px 0; /* 段落の上下に少しの余白を追加 */
+}
+
+/*モード*/
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.setting-command {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle_button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 170px;
+  height: 42px;
+}
+
+.toggle_input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle_label {
+  width: 170px;
+  height: 42px;
+  background: #fff;
+  border: 3px solid #eee;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 42px;
+}
+
+.toggle_label:after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  left: 2px;
+  top: 2px;
+  z-index: 2;
+  background: #eee;
+  transition: 0.4s;
+}
+
+body:not(.dark-mode) .toggle_label {
+  background-color: #fff;
+  border: 3px solid #000;
+}
+
+body.dark-mode tbody{
+  color: #fff;
+  background-color: #000;
+}
+
+body.dark-mode .toggle_label {
+  background-color: #000;
+  border: 3px solid #fff;
+}
+
+body.dark-mode .title,
+body.dark-mode .type_field,
+body.dark-mode .ability_field,
+body.dark-mode .gender_field,
+body.dark-mode .egg_group_field,
+body.dark-mode .region_field,
+body.dark-mode .generation_field,
+body.dark-mode .elements_field,
+body.dark-mode .list-box,
+body.dark-mode .list-item{
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+}
+
+
+body.dark-mode .type,
+body.dark-mode .ability,
+body.dark-mode .gender,
+body.dark-mode .egg_group,
+body.dark-mode .region,
+body.dark-mode .generation,
+body.dark-mode .elements{
+  background-color: #000;
+  color: #fff;
+}
+
+body:not(.dark-mode) #languageButton:checked + .toggle_label,
+body:not(.dark-mode) #imageButton:checked + .toggle_label {
+  border: 3px solid #000;
+}
+
+.toggle_input:checked + .toggle_label:after {
+  left: calc(100% - 34px);
+}
+
+.decision-command {
+  display: flex;
+  justify-content: center; /* 横方向の中央揃え */
+  align-items: center; /* 縦方向の中央揃え */
+}
+
+
+.decision-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
+#buttonWithImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#decisionButton {
+  display: block;
+  text-align: center;
+}
+
+#decisionButton img {
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+}
+.toggle_label.shiny {
+  border-image: linear-gradient(to right, #fbfd5c 0%, #acff40 10%, #77ff5c 20%, #57ffbe 30%, #45f1be 40%, #15ccfa 50%, #3e8bff 60%, #ea62f7 70%, #fd4ca5 80%,  #f76262 90%, #ff5656 100%);
+  border-image-slice: 1;
+}
+.poke_area{
+  top: 1200px;
+  position: relative;
+
+  margin: 0 auto;
+  padding: 10px 20px;
+}
