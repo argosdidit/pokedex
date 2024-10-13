@@ -1089,7 +1089,7 @@ const Thisproject = (() => {
       .makeDecisionButton()
       .reflectMode()
       .makeTypeImage()
-      .makeSaveButton()
+      //.makeSaveButton()
       .makeCursor()
       .fetchMoveData()
       .getPokeId()
